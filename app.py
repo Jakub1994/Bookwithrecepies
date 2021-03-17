@@ -14,10 +14,15 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
+mongo = PyMongo(app)
 
 @app.route("/")
-def hello():
-    return "Hello Guys"
+
+
+@app.route("/recipies")
+def get_recipie():
+    recipies = mongo.db.recipies.find()
+    return render_template("recipies.html", recipies=recipies)
 
 
 if __name__ == "__main__":
