@@ -23,9 +23,16 @@
             </div>
             <!--Register-->
             <div class="row ">
-                <button class="col s12 btn-large waves-effect waves-light darken-4 text-shadow " type="submit">Register <i class="material-icons prefix light-darken">assignment_ind</i></button>
+                <button class="col s12 btn-large waves-effect waves-light darken-4 text-shadow " type="submit">Register<i class="material-icons prefix light-darken">plus_one</i></button>
             </div>
         </form>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <p class="center-align">
+                If you already registered.<a href="{{ url_for('login') }}"> Click here! </a>
+            </p>
+        </div>
     </div>
 </div>
 {% endblock %}
