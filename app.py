@@ -18,10 +18,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 @app.route("/")
-@app.route("/recipies")
-def get_recipie():
-    recipies = mongo.db.recipies.find()
-    return render_template("recipies.html", recipies=recipies)
+@app.route("/recipes")
+def get_recipe():
+    recipes = mongo.db.recipes.find()
+    return render_template("recipes.html", recipes=recipes)
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
