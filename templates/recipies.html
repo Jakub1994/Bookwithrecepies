@@ -1,35 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row">
-    <form class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <input id="input_text" type="text" data-length="10">
-                <label for="input_text">Input text</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-                <label for="textarea2">Textarea</label>
-            </div>
-        </div>
-    </form>
-</div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-    
+<h3 class="center-align">Add Receipt</h3>
+<ul class="collection with-header">
+    <li class="collection-header">
+        <h4>Receipies</h4>
+    </li>
+    <li class="collection-item">
+        <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+    </li>
+    <li class="collection-item">
+        <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+    </li>
+    <li class="collection-item">
+        <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+    </li>
+    <li class="collection-item">
+        <div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+    </li>
+</ul>
 
 {% endblock %}
