@@ -1,20 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Add Recipe</h3>
+<h3 class="center-align">Recipes</h3>
 <ul class="collapsible">
+    {% for rec in recipes %}
     <li>
-      <div class="collapsible-header teal lighten-2 s8"><i class="material-icons">arrow_drop_down</i> First</div>
-      <div class="collapsible-body"><span><img src="" alt=""> Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header teal lighten-2 s8">
+            <i class="material-icons">arrow_drop_down</i> <strong>{{ rec.recipe_name }}</strong>
+        </div>
+        <div class="collapsible-body">
+            <span>
+                <img src="" alt="">
+                <p class="s2">{{ rec.preparation_time }}</p>
+                <p class="s2">{{ rec.difficulty_level }}</p>
+                <p class="s8">{{ rec.short_describe }}</p>
+                <p class="s4">{{ rec.ingredients }}</p>
+                <div>
+                    <p class="s6">{{ rec.step_1_of_preparation }}</p>
+                    <p class="s6">{{ rec.step_2 }}</p>
+            </div>
+            </span>
+        </div>
     </li>
-    <li>
-      <div class="collapsible-header teal lighten-2 s8"><i class="material-icons">arrow_drop_down</i>Second</div>
-      <div class="collapsible-body"><span> <img src="" alt=""> Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header teal lighten-2 s8"><i class="material-icons">arrow_drop_down</i>Third</div>
-      <div class="collapsible-body"><span> <img src="" alt=""> Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
+    {% endfor %}
+</ul>
 
 {% endblock %}
