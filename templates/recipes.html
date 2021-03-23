@@ -7,6 +7,9 @@
     <li class="container">
         <div class="collapsible-header teal lighten-2 col s8 ">
             <i class="material-icons">arrow_drop_down</i> <strong>{{ rec.recipe_name }}</strong>
+            {% if rec.vegan == "on" %}
+                <i class="material-icons tooltipped" data-position="right" data-tooltip="VEGAN">local_florist</i>
+            {% endif %}
         </div>
         <div class="collapsible-body col s8 teal lighten-3">
             <span class="row">
