@@ -4,20 +4,23 @@
 <h3 class="center-align">Recipes</h3>
 <ul class="collapsible">
     {% for rec in recipes %}
-    <li>
-        <div class="collapsible-header teal lighten-2 s8">
+    <li class="container">
+        <div class="collapsible-header teal lighten-2 col s8 ">
             <i class="material-icons">arrow_drop_down</i> <strong>{{ rec.recipe_name }}</strong>
         </div>
         <div class="collapsible-body">
-            <span>
-                <img src="" alt="">
-                <p class="s2">{{ rec.preparation_time }}</p>
-                <p class="s2">{{ rec.difficulty_level }}</p>
-                <p class="s8">{{ rec.short_describe }}</p>
-                <p class="s4">{{ rec.ingredients }}</p>
-                <div>
-                    <p class="s6">{{ rec.step_1_of_preparation }}</p>
-                    <p class="s6">{{ rec.step_2 }}</p>
+            <span class="row">
+                <img class="responsive-img col s8 m6" src="https://www.veganricha.com/wp-content/uploads/2020/10/Pumpkin-Chickpea-Curry-2710.jpg">
+                <p class="col s4">Preparation time: {{ rec.preparation_time }}</p>
+                <p class="col s4">Difficulty level: {{ rec.difficulty_level }}</p>
+                <div class="col s12">
+                    <p class="col s12 m12">
+                        {{ rec.short_describe }}</p>
+                </div>
+                <div class="col s12">
+                    <p><h5 class="center-align">Ingrediens</h5>{{ rec.ingredients }}</p>
+                    <p><h5 class="center-align">Step 1:</h5>{{ rec.step_1_of_preparation }}</p>
+                    <p><h5 class="center-align">Step 2:</h5>{{ rec.step_2 }}</p>
             </div>
             </span>
         </div>
