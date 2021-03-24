@@ -5,15 +5,17 @@
 <div class="row">
     <div class="container">
     <div class="teal lighten-5">
-    <form class="col s12" method="POST" action="">
+    <form class="col s12" method="POST" action="{{ url_for('new_recipes')}}">
+        <!--Dish Name-->
         <div class="row col s6">
             <div class="input-field col s12">
                 <input id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></input>
                 <label for="recipe_name">Dish Name</label>
             </div>
         </div>
+        <!--Add Picture part-->
         <div class="row col s6">
-            <form action="#">
+            <form>
                 <div class="file-field input-field col s12">
                     <div class="btn">
                         <span>Picture</span>
@@ -25,6 +27,7 @@
                 </div>
             </form>
         </div>
+        <!--select input-->
         <div class="row">            
             <div class="input-field col s3">
             <select id="cooking_time" name="cooking_time" class="validate" required>
@@ -38,41 +41,47 @@
             <label for="cooking_time">Cooking time</label>
             </div>
         </div>
+        <!--Short Description-->
         <div class="row">
             <div class="input-field col s8">
                 <div class="input-field">
-                <textarea id="short_describe" name="short_describe" type="text" minlength="50" maxlength="300" required class="materialize-textarea"></textarea>
+                <textarea id="short_describe" name="short_describe" type="text" minlength="50" maxlength="300" class="materialize-textarea"></textarea>
                 <label for="short_describe">Short Description:</label>
             </div>
         </div>
+        <!--Ingridients-->
         <div class="row">
             <div class="input-field col s8">
                 <div class="input-field">
-                <textarea id="ingredients" name="ingredients" type="text" minlength="50" maxlength="500" required class="materialize-textarea"></textarea>
+                <textarea id="ingredients" name="ingredients" type="text" minlength="50" maxlength="500" class="materialize-textarea"></textarea>
                 <label for="ingredients">Ingridients:</label>
             </div>
         </div>
+        <!--Step 1-->
         <div class="row">
             <div class="input-field col s12">
                 <div class="input-field">
-                <textarea id="step_1_of_preparation" name="step_1_of_preparation" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <textarea id="step_1_of_preparation" name="step_1_of_preparation" type="text" minlength="50" maxlength="500" class="materialize-textarea"></textarea>
                 <label for="step_1_of_preparation">Step 1</label>
             </div>
         </div>
+        <!--Step 2-->
         <div class="row">
             <div class="input-field col s12">
                 <div class="input-field">
-                <textarea id="step_2" name="step_2" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <textarea id="step_2" name="step_2" type="text" minlength="50" maxlength="500" class="materialize-textarea"></textarea>
                 <label for="step_2">Step 2</label>
             </div>
         </div>
+        <!--Step 3-->
         <div class="row">
             <div class="input-field col s12">
                 <div class="input-field">
-                <textarea id="step_3" name="step_3" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <textarea id="step_3" name="step_3" type="text" minlength="50" maxlength="500" class="materialize-textarea"></textarea>
                 <label for="step_3">Step 3</label>
             </div>
         </div>
+        <!--Switch lever-->
         <div class="row">
             <div class="input-field col s12">
                 <div class="switch">
@@ -83,6 +92,14 @@
                         Vegan
                     </label>
                 </div>
+            </div>
+        </div>
+        <!---Submit button--->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button class="btn waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
             </div>
         </div>
     </form>

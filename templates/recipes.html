@@ -13,7 +13,8 @@
         </div>
         <div class="collapsible-body col s8 teal lighten-3">
             <span class="row">
-                <img class="responsive-img col s8 m6" src="https://www.veganricha.com/wp-content/uploads/2020/10/Pumpkin-Chickpea-Curry-2710.jpg">
+                <img class="responsive-img col s8 m6"
+                    src="https://www.veganricha.com/wp-content/uploads/2020/10/Pumpkin-Chickpea-Curry-2710.jpg">
                 <p class="col s4">Preparation time: {{ rec.preparation_time }}</p>
                 <p class="col s4">Difficulty level: {{ rec.difficulty_level }}</p>
                 <div class="col s12">
@@ -21,10 +22,14 @@
                         {{ rec.short_describe }}</p>
                 </div>
                 <div class="col s12">
-                    <p><h5 class="center-align">Ingrediens</h5>{{ rec.ingredients }}</p>
-                    <p><h5 class="center-align">Step 1:</h5>{{ rec.step_1_of_preparation }}</p>
-                    <p><h5 class="center-align">Step 2:</h5>{{ rec.step_2 }}</p>
-            </div>
+                    <p>
+                    <h5 class="center-align">Ingrediens</h5>{{ rec.ingredients }}</p>
+                    <p>
+                    <h5 class="center-align">Step 1:</h5>{{ rec.step_1_of_preparation }}</p>
+                    <p>
+                    <h5 class="center-align">Step 2:</h5>{{ rec.step_2 }}</p>
+                </div>
+                <p><em> {{ rec.created_by }}</em></p>
             </span>
         </div>
     </li>
