@@ -2,17 +2,19 @@
 {% block content %}
 
 <h3 class="center-align">Add Recipe</h3>
-<div class="row container teal lighten-5 center-block">
+<div class="row">
+    <div class="container">
+    <div class="teal lighten-5">
     <form class="col s12" method="POST" action="">
-        <div class="row">
-            <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Dish Name</label>
+        <div class="row col s6">
+            <div class="input-field col s12">
+                <input id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></input>
+                <label for="recipe_name">Dish Name</label>
             </div>
         </div>
-        <div class="row">
+        <div class="row col s6">
             <form action="#">
-                <div class="file-field input-field col s3">
+                <div class="file-field input-field col s12">
                     <div class="btn">
                         <span>Picture</span>
                         <input type="file">
@@ -24,62 +26,76 @@
             </form>
         </div>
         <div class="row">
-            <div class="input-field col s1">
+            <div class="input-field col s2">
             <select>
-                <option value="" disabled selected>Choose one</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="Difficulty" disabled selected>Difficulty</option>
+                <option value="easy">easy</option>
+                <option value="medium">medium</option>
+                <option value="hard">hard</option>
             </select>
             <label>Difficulty level</label>
         </div>
         <div class="row">            
-            <div class="input-field col s1">
+            <div class="input-field col s2">
             <select>
-                <option value="" selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="Cooking time" selected>Cooking time</option>
+                <option value="0-15min">0-15min</option>
+                <option value="15-30min">15-30min</option>
+                <option value="30-45min">30-45min</option>
             </select>
             <label>Cooking time</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s8">
-                <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="50" maxlength="300" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Short Description:</label>
+                <div class="input-field">
+                <textarea id="short_describe" name="short_describe" type="text" minlength="50" maxlength="300" required class="materialize-textarea"></textarea>
+                <label for="short_describe">Short Description:</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s8">
-                <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="50" maxlength="500" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Ingridients:</label>
+                <div class="input-field">
+                <textarea id="ingredients" name="ingredients" type="text" minlength="50" maxlength="500" required class="materialize-textarea"></textarea>
+                <label for="ingredients">Ingridients:</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Dish Name</label>
+                <div class="input-field">
+                <textarea id="step_1_of_preparation" name="step_1_of_preparation" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <label for="step_1_of_preparation">Step 1</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Dish Name</label>
+                <div class="input-field">
+                <textarea id="step_2" name="step_2" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <label for="step_2">Step 2</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <div class="input-field col s3 center-block">
-                <textarea id="recipe_name" name="recipe_name" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
-                <label for="textarea1">Step 3</label>
+                <div class="input-field">
+                <textarea id="step_3" name="step_3" type="text" minlength="3" maxlength="60" required class="materialize-textarea"></textarea>
+                <label for="step_3">Step 3</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="switch">
+                    <i class="material-icons tooltipped" data-position="right" data-tooltip="VEGAN">local_florist</i>
+                    <label for="vegan">
+                        <input type="checkbox" id="vegan" name="vegan">
+                        <span class="lever"></span>
+                        Vegan
+                    </label>
+                </div>
             </div>
         </div>
     </form>
+    </div>
+    </div>
 </div>
           
 

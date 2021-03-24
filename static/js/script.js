@@ -2,16 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {edge: "right"});
   });
+  
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, {inDuration: "200"});
   });
+
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, {enterDelay: "100"});
   });
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea2, textarea#textarea3, textarea#textarea4, textarea#textarea5, textarea#textarea6').characterCounter();
+
+  $('#recipe_name, #preparation_time, #difficulty_level, #short_describe, #ingredients, #step_1_of_preparation, #step_2, #step_3').val('');
+  M.textareaAutoResize($('#recipe_name, #preparation_time, #difficulty_level, #short_describe, #ingredients, #step_1_of_preparation, #step_2, #step_3'));
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, {});
   });
-  $('input#input_text, textarea#textarea2, textarea#textarea3, textarea#textarea4, textarea#textarea5, textarea#textarea6').val('');
-  M.textareaAutoResize($('input#input_text, textarea#textarea2, textarea#textarea3, textarea#textarea4, textarea#textarea5, textarea#textarea6'));
