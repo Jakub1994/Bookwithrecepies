@@ -1,5 +1,4 @@
 import os
-import psycopg2
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -18,6 +17,7 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
 
 @app.route("/")
 @app.route("/recipes")
@@ -96,6 +96,12 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/add_recipe")
+def add_recipe():
+    return render_template("new_recipes.html")
+
 
 
 if __name__ == "__main__":

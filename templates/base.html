@@ -21,7 +21,7 @@
                 <li class="z-depth-3"><a href="{{ url_for('get_recipe') }}">Home</a></li>
                 {% if session.user %}
                     <li class="z-depth-3"><a href="{{url_for( 'myProfile' , username=session['user']) }}">My Profile</a></li>
-                    <li class="z-depth-3"><a href="#">Add Recipes</a></li>
+                    <li class="z-depth-3"><a href="{{url_for('add_recipe') }}">Add Recipes</a></li>
                     <li class="z-depth-3"><a href="{{ url_for('logout') }}">Logout</a></li>
                 {% else %}
                     <li class="z-depth-3"><a href="{{ url_for('login') }}">Login</a></li>
@@ -35,7 +35,7 @@
         <li class="z-depth-3"><a href="{{ url_for('get_recipe') }}">Home</a></li>
             {% if session.user %}
                 <li class="z-depth-3"><a href="{{url_for( 'myProfile' , username=session['user']) }}">My Profile</a></li>
-                <li class="z-depth-3"><a href="#">Add Recipes</a></li>
+                <li class="z-depth-3"><a href="{{url_for('add_recipe') }}">Add Recipes</a></li>
                 <li class="z-depth-3"><a href="{{ url_for('logout') }}">Logout</a></li>
             {% else %}
                 <li class="z-depth-3"><a href="{{ url_for('login') }}">Login</a></li>
