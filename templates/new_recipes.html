@@ -25,25 +25,17 @@
                 </div>
             </form>
         </div>
-        <div class="row">
-            <div class="input-field col s2">
-            <select>
-                <option value="Difficulty" disabled selected>Difficulty</option>
-                <option value="easy">easy</option>
-                <option value="medium">medium</option>
-                <option value="hard">hard</option>
-            </select>
-            <label>Difficulty level</label>
-        </div>
         <div class="row">            
-            <div class="input-field col s2">
-            <select>
-                <option value="Cooking time" selected>Cooking time</option>
-                <option value="0-15min">0-15min</option>
-                <option value="15-30min">15-30min</option>
-                <option value="30-45min">30-45min</option>
+            <div class="input-field col s3">
+            <select id="cooking_time" name="cooking_time" class="validate" required>
+                <option value="Cooking time" disabled selected>Cooking time</option>
+                {% for cook in prep_time %}
+                <option value="{{ cook.cooking_time }}">
+                    {{ cook.cooking_time }} 
+                </option>
+                {% endfor %}
             </select>
-            <label>Cooking time</label>
+            <label for="cooking_time">Cooking time</label>
             </div>
         </div>
         <div class="row">

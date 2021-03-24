@@ -98,10 +98,10 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_recipe")
-def add_recipe():
-    return render_template("new_recipes.html")
-
+@app.route("/new_recipes")
+def new_recipes():
+    prep_time = mongo.db.prep_time.find().sort("cooking_time", 1)
+    return render_template("new_recipes.html", prep_time=prep_time)
 
 
 if __name__ == "__main__":
