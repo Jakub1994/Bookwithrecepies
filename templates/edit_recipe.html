@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="center-align">Edit Recipe</h3>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <div class="teal lighten-5">
+            <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" enctype="multipart/form-data">
+            <!--Dish Name-->
+                <div class="row">
+                    <div class="input-field col s8">
+                        <input id="recipe_name" name="recipe_name" type="text" class="materialize-textarea validate" minlength="3" maxlength="60"
+                        value="{{ recipe.recipe_name }}" required></input>
+                        <label for="recipe_name">Dish Name</label>
+                    </div>
+                </div>
+            <!--Add Picture part-->
+                <div class="row">
+                    <div class="input-field col s8">
+                        <input type="url" class="form-control" id="recipe_image" name="recipe_image" value="{{ recipe.recipe_image }}}" required>
+                        <label for="recipe_image" class="form-label">Image URL</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8">
+                        <textarea id="short_describe" name="short_describe" type="text" minlength="50" maxlength="300" class="materialize-textarea validate">
+                        {{- recipe.short_describe -}}
+                        </textarea>
+                        <label for="short_describe">Short Description:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8">
+                        <textarea id="ingredients" name="ingredients" type="text" minlength="50" maxlength="500" class="materialize-textarea validate">
+                        {{- recipe.ingredients -}}
+                        </textarea>
+                        <label for="ingredients">Ingridients:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="step_1_of_preparation" name="step_1_of_preparation" type="text" minlength="50" maxlength="500" class="materialize-textarea validate">
+                        {{- recipe.step_1_of_preparation -}}
+                        </textarea>
+                        <label for="step_1_of_preparation">Step 1</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="step_2" name="step_2" type="text" minlength="50" maxlength="500" class="materialize-textarea validate">
+                        {{- recipe.step_2 -}}
+                        </textarea>
+                        <label for="step_2">Step 2</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="step_3" name="step_3" type="text" minlength="50" maxlength="500" class="materialize-textarea validate">
+                        {{- recipe.step_3 -}}
+                        </textarea>
+                        <label for="step_3">Step 3</label>
+                    </div>
+                </div>
+                <div class="input-field col s12">
+                    <div class="switch">
+                        <i class="material-icons tooltipped" data-position="right" data-tooltip="VEGAN">local_florist</i>
+                        <label for="vegan">
+                        {% if recipe.vegan == "on" %}
+                            <input type="checkbox" id="vegan" name="vegan" checked>
+                        {% else %}
+                            <input type="checkbox" id="vegan" name="vegan">
+                        {% endif %}
+                            <span class="lever"></span>
+                                Vegan
+                        </label>
+                    </div>
+                </div>
+                <!---Submit button-->
+                <div class="col s12 center-align">
+                <!-- cancel button -->
+                    <a href="{{ url_for('get_recipe') }}" class="btn-large red text-shadow">
+                        Cancel <i class="material-icons right">exit_to_app</i>
+                    </a>
+                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                        Edit Task <i class="material-icons right">done</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

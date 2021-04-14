@@ -1,39 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Recipes</h3>
-<ul class="collapsible">
-    {% for rec in recipes %}
-    <li class="container">
-        <div class="collapsible-header teal lighten-2 col s8 ">
-            <i class="material-icons">arrow_drop_down</i> <strong>{{ rec.recipe_name }}</strong>
-            {% if rec.vegan == "on" %}
-                <i class="material-icons tooltipped" data-position="right" data-tooltip="VEGAN">local_florist</i>
-            {% endif %}
+<div class="container body-wrapper">
+
+<div class="row">
+    <div class="col s12 m8 offset-m2">
+        <div class="card-panel green lighten-2">
+            <h4 class="center-align dark-blue-text">
+                Find out what u like!
+            </h4>
         </div>
-        <div class="collapsible-body col s8 teal lighten-3">
-            <span class="row">
-                <img class="responsive-img col s8 m6"
-                    src="https://www.veganricha.com/wp-content/uploads/2020/10/Pumpkin-Chickpea-Curry-2710.jpg">
-                <p class="col s4">Preparation time: {{ rec.preparation_time }}</p>
-                <p class="col s4">Difficulty level: {{ rec.difficulty_level }}</p>
+    </div>
+</div>
+<ul class="collapsible card">
+{% for recipe in recipies %}
+    <li class="hoverable">
+      <div class="collapsible-header col s12 green lighten-3 row">
+        <span class="card-title col s12 m6 12"><h4>{{ recipe.recipe_name }}</h4></span>
+        <img  class="card-top card-image col s12 m6 18"src="{{ recipe.recipe_image }}" alt="{{ recipe.recipe_name }}">
+      </div>
+      <div class="collapsible-body col s12">
+      {% if recipe.vegan == "on" %}
+               <i class=" Medium material-icons tooltipped align right col" data-position="right" data-tooltip="VEGAN">local_florist</i>
+        {% endif %}
+        <br>
+      <span class="card-content  col s12">
+            <div class="align center col s12">
+                <strong>Short describe:</strong>
+                <p class="card-text">{{ recipe.short_describe }}</p>
+            </div>
+            <div class="align center col s12">
+	            <div class="card-content ">
+                    <strong>Ingridients:</strong>
+                    <p class="card-text"> {{ recipe.ingredients }} </p>
+	            </div>
+	            <div class="col s12">
+                    <strong>Step 1:</strong>
+                    <p class="card-text"> {{ recipe.step_1_of_preparation }} </p>
+	            </div>
                 <div class="col s12">
-                    <p class="col s12 m12">
-                        {{ rec.short_describe }}</p>
+                    <strong>Step 2:</strong>
+                    <p class="card-text"> {{ recipe.step_2 }} </p>
+	            </div>
+	            <div class="col s12">
+                    <strong>Step 3:</strong>
+                    <p class="card-text"> {{ recipe.step_3 }} </p>
+	            </div>
+                <hr>
+                <p class="align right"><em>Created by: {{ recipe.created_by }} </em></p>
+                <div class=" align left col s12 ">
+                {% if session.user|lower == recipe.created_by|lower %}
+                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red accent-4">Delete</a>
+                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small light-blue">Edit</a>
+                {% endif %}
                 </div>
-                <div class="col s12">
-                    <p>
-                    <h5 class="center-align">Ingrediens</h5>{{ rec.ingredients }}</p>
-                    <p>
-                    <h5 class="center-align">Step 1:</h5>{{ rec.step_1_of_preparation }}</p>
-                    <p>
-                    <h5 class="center-align">Step 2:</h5>{{ rec.step_2 }}</p>
-                </div>
-                <p><em> {{ rec.created_by }}</em></p>
-            </span>
-        </div>
+      </span>
+      </div>
     </li>
-    {% endfor %}
+    <br>
+{% endfor %}
 </ul>
+
 
 {% endblock %}

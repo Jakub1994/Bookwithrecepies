@@ -1,3 +1,19 @@
 .flashes h4 {
     line-height: 2;
 }
+.card-top{
+    width: 60%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.footer-link {
+    color: #850d09;
+}
+
+.footer-link:hover {
+    color: rgb(160, 13, 197);
+}
+.btn-small{
+    margin: 10px;
+}

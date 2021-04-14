@@ -5,9 +5,55 @@
     <div class="col s12 m8 offset-m2">
         <div class="card-panel">
             <h4 class="center-align dark-blue-text text-darken-4">
-                {{ username }}´s Profile
-            </h3>
+                {{ username }}´s Recipes
+            </h4>
         </div>
     </div>
 </div>
+
+<div class="container body-wrapper">
+<ul class="collapsible card">
+{% for recipe in recipes %}
+{% if session.user|lower == recipe.created_by|lower %}
+    <li class="hoverable">
+      <div class="collapsible-header col s12  green lighten-3 row">
+        <span class="card-title col s12"><h3>{{ recipe.recipe_name }}</h3></span>
+        <img  class="card-top card-image col s12"src="{{ recipe.recipe_image }}" alt="{{ recipe.recipe_name }}">
+      </div>
+      <div class="collapsible-body col s12">
+      {% if recipe.vegan == "on" %}
+               <i class=" Medium material-icons tooltipped align right col" data-position="right" data-tooltip="VEGAN">local_florist</i>
+        {% endif %}
+        <br>
+      <span class="card-content  col s12">
+            <div class="align center col s12">
+                <strong>Short describe:</strong>
+                <p class="card-text">{{ recipe.short_describe }}</p>
+            </div>
+            <div class="align center col s12">
+	            <div class="card-content ">
+                    <strong>Ingridients:</strong>
+                    <p class="card-text"> {{ recipe.ingredients }}</p>
+	            </div>
+	            <div class="col s12">
+                    <strong>Step 1:</strong>
+                    <p class="card-text"> {{ recipe.step_1_of_preparation }}</p>
+	            </div>
+                <div class="col s12">
+                    <strong>Step 2:</strong>
+                    <p class="card-text">{{ recipe.step_2 }}</p>
+	            </div>
+	            <div class="col s12">
+                    <strong>Step 3:</strong>
+                    <p class="card-text">{{ recipe.step_3 }}</p>
+	            </div>
+                <hr>
+                <p class="align right"><em>Created by: {{ recipe.created_by }}</em></p>
+      </span>
+      </div>
+    </li>
+    <br>
+{% endif %}
+{% endfor %}
+</ul>
 {% endblock %}

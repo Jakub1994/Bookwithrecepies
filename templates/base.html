@@ -55,13 +55,51 @@
     {% endif %}
     {% endwith %}
 </section>
-
+<div>
     {% block content %}
     {% endblock %}
+</div>
+    <footer class="page-footer  green lighten-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12 align center">
+                <h5 class="white-text">Contact us:</h5>
+                <p>
+                    <p>Email:
+                        <a class="footer-link" href="mailto:veganforthevoicelesssam@gmail.com">
+                            veganforthevoicelesssam@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                    Call Us:
+                    07503 609537
+                    </p>
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12 align center">
+                <h5 class="white-text">Contact Us in Social Media</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/Jakub1994">Github</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jakub-ostaszewski-22403a164">Linkedin</a></li>
+                  <l><a class="grey-text text-lighten-3" href="https://www.facebook.com/jakub.ostaszewski.39/">Facebook</a></l>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+                <p class="text-muted">Copyright &copy; Recipe ME <span id="copyright"></span></p>
+            </div>
+          </div>
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Copyright script -->
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+    </script>
     {% block scripts %}
     {% endblock %}
 </body>
