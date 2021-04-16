@@ -1,23 +1,58 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Jakub1994/Bookwithrecepies)
 
-README FILE 
-Vegan Recipies share book
-I was requested to prepere the Milestone3 project for Code Institute.
-While it´s already my third one my teachers asked me to use programs requested in the others milestone projects plus python and mysql or nosql.
+
+Recipes Notebook
+My name is Jakub Ostaszewski and as I am student of Code Institute i was required to create my third Milestone Project
+, which should contain Python and one of the database noSQL(Mongodb) or mySQL.
+I decided to make an online recipes app where Each account holder should be able to Create, Read, Update, and Delete (CRUD) their own recipes.Website would be build by basic Front end Programs (HTML,CSS,Javascript), Python, Mongodb and modules what helps to connect program with database.
+
 
 UX
+1.For what group of people is website Recipe ME?
+My idea was an site where anyone can write and share recipe with the other user.
+Side that would be free to view recipes for anyone with options of create , edit and delete an recipe for loged in users.
+They could use that side as the cook notebook also it would be shared to the others what is giving them oportunity to learn and enjoy someones amazing dish.
 
-Vegan Recepies share book.
-Website have an idea to share recipies from people with people.
-Was created with the through of vegan people, but anyone can use it and have fun by creating delicious dishes taken from here at home.
-Anyone can register to the server and add something from himself/herself
+3. First time Visitors expectations:
+- As a Visitor I expect to be able to easily navigate throught the site.
+- As a Visitor I expect to be able get information about recipe to create it at home.
+- As a Visitor I want to register my account
+- As a Visitor I want to access my account
+- As a Visitor I want to contact owner if i would have any issue
+- As a Visitor I can get interested of the owner work thats why would be
+great to see his other projects/works
+2. Registered User Goals:
+- As a User I want to log in to my profile
+- As a User I want to log out from my profile
+- As a User I want to be able remove my recipe
+- As a User I want to be able to add recipe
+- As a User I want to be able to Modify my recipe
+- As a User I want to get in touch with the owner if i want to ask about any changes 
+in the feature
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+Design:
+I tried create simple , fresh looking site where i could use materializedcss.
+Every page has navbar coloured teal with navigation to the other pages and light green footer where user can find how to contact owner , and find some social media services with his work.
+1. Color Scheme:
+- background color of the page is white
+- elements like cards are light green that's good match with the pictures from the recipe's
+- footer links are white
+- email link in footer is red with pink hoover.
+2.Pages
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+- Home : Possess cards with recipes. Cards are green with title,
+    image and collapse effect while clicked.Collapse text is black with white background.
+    On the botton of the page is placed sign who's created that description.
+    Since the collapsed recipe is yours ,Edit and Delate buttons should appear on the left side below the text.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+- My Profile : Contain whole description of the app , it shows how to use pages
+    and manage your knowlage on the app. Here owner would write
+    how he is gonna change the page.
+
+- Add Recipe : Allows user to add his own dish idea to the home page.
+    Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description", "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
+- Logout : Button what takes user out of the account.
+
 
 Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.

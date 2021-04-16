@@ -15,7 +15,7 @@
     <!--Top Nav-->
     <nav>
         <div class="nav-wrapper z-depth-1 teal ">
-            <a href="#!" class="brand-logo">Recipe ME</a>
+            <a href="{{ url_for('get_recipe') }}" class="brand-logo">Recipe ME</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons right">dehaze</i></a>
             <ul class="right hide-on-med-and-down z-depth-2">
                 <li class="z-depth-3"><a href="{{ url_for('get_recipe') }}">Home</a></li>

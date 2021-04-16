@@ -5,55 +5,103 @@
     <div class="col s12 m8 offset-m2">
         <div class="card-panel">
             <h4 class="center-align dark-blue-text text-darken-4">
-                {{ username }}´s Recipes
+              Hello  {{ username }}
             </h4>
         </div>
     </div>
 </div>
-
-<div class="container body-wrapper">
-<ul class="collapsible card">
-{% for recipe in recipes %}
-{% if session.user|lower == recipe.created_by|lower %}
-    <li class="hoverable">
-      <div class="collapsible-header col s12  green lighten-3 row">
-        <span class="card-title col s12"><h3>{{ recipe.recipe_name }}</h3></span>
-        <img  class="card-top card-image col s12"src="{{ recipe.recipe_image }}" alt="{{ recipe.recipe_name }}">
-      </div>
-      <div class="collapsible-body col s12">
-      {% if recipe.vegan == "on" %}
-               <i class=" Medium material-icons tooltipped align right col" data-position="right" data-tooltip="VEGAN">local_florist</i>
-        {% endif %}
-        <br>
-      <span class="card-content  col s12">
-            <div class="align center col s12">
-                <strong>Short describe:</strong>
-                <p class="card-text">{{ recipe.short_describe }}</p>
+<div class="row">
+    <div class="col s12 m8 offset-m2 green lighten-2">
+        <div class="card-panel green lighten-3">
+            <h5 class="center-align dark-blue-text text-darken-4">
+                We are happy to introduce you "Recipe me" site.
+                It's website where anyone can look for great recipes.
+            </h5>
+            <h5>
+            Since u see this dialog it means u get registered.
+            It's fantastic , now u can Add , Edit and also later Delate your recipe.
+            If you have problems with our web navigation in this page we would help you.
+            </h5>
+            <h5>
+                On the top site of the Page we can see navigation bar with 4 buttons.
+                Everyone is taking us to the different place.
+            </h5>
+        </div>
+    </div>
+</div>
+<div class="row center-align">
+    <div class="col s12 m8 offset-m2 center-align">
+        <ul class="center-align">
+        <!-- Home Page -->
+        <li>
+        <div class="card green lighten-3">
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Home<i class="material-icons right">more_vert</i></span>
+                <p class="left-align"><a href=" {{ url_for('get_recipe') }} ">Home Page<i class="material-icons">restaurant</i></a></p>
             </div>
-            <div class="align center col s12">
-	            <div class="card-content ">
-                    <strong>Ingridients:</strong>
-                    <p class="card-text"> {{ recipe.ingredients }}</p>
-	            </div>
-	            <div class="col s12">
-                    <strong>Step 1:</strong>
-                    <p class="card-text"> {{ recipe.step_1_of_preparation }}</p>
-	            </div>
-                <div class="col s12">
-                    <strong>Step 2:</strong>
-                    <p class="card-text">{{ recipe.step_2 }}</p>
-	            </div>
-	            <div class="col s12">
-                    <strong>Step 3:</strong>
-                    <p class="card-text">{{ recipe.step_3 }}</p>
-	            </div>
-                <hr>
-                <p class="align right"><em>Created by: {{ recipe.created_by }}</em></p>
-      </span>
-      </div>
-    </li>
-    <br>
-{% endif %}
-{% endfor %}
-</ul>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Home<i class="material-icons right">close</i></span>
+                <p>
+                    That's our main aspect of the webapp.
+                    Here we can find recipes created by us and the other users
+                    After clicking on the title with the image u scroll down the recipe.
+                    Every step of the recipe is given in detail one by one :
+                    Short describe,Ingridients,Step 1,Step 2, Step 3
+                    If recipe is yours u will see on the down left site two buttons Edit and Delete.
+                    As the names are saing one is Delating and another Editing the recipe.
+                </p>
+            </div>
+        </div>
+        </li>
+        <!-- My Profile Page -->
+        <li>
+        <div class="card green lighten-3">
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">My Profile<i class="material-icons right">more_vert</i></span>
+                <p class="left-align"><a href="{{url_for( 'myProfile' , username=session['user']) }}">My Profile<i class="material-icons">view_agenda</i></a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">My Profile<i class="material-icons right">close</i></span>
+                <p>
+                It's the navigation map Page with informations about the others.
+                Here we would tekst any changes implemented by the owner.
+                </p>
+            </div>
+        </div>
+        </li>
+        <!-- Add Recipe Page -->
+        <li>
+        <div class="card green lighten-3">
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Add Recipe<i class="material-icons right">more_vert</i></span>
+                <p class="left-align"><a href="{{url_for('new_recipes') }}">Add Recipe<i class="material-icons">save</i></a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Add Recipe<i class="material-icons right">close</i></span>
+                <p>
+                Full of text inputs where u can add any recipe.
+                That's the place where account owners can write their amazing
+                creations and share with the others by click the submit buttons.
+                </p>
+            </div>
+        </div>
+        </li>
+        <!-- Logout Page -->
+        <li>
+        <div class="card green lighten-3">
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Logout<i class="material-icons right">more_vert</i></span>
+                <p class="left-align"><a href="{{ url_for('logout') }}">Logout<i class="material-icons">undo</i></a></p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Logout<i class="material-icons right">close</i></span>
+                <p>That's simply Logout button, what is taking u out of your account.</p>
+            </div>
+        </div>
+        </li>
+        </ul>
+    </div>
+</div>
+<br>
+
 {% endblock %}
