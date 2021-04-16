@@ -1,14 +1,14 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Jakub1994/Bookwithrecepies)
 
 
-Recipes Notebook
+# Recipe ME
 My name is Jakub Ostaszewski and as I am student of Code Institute i was required to create my third Milestone Project
 , which should contain Python and one of the database noSQL(Mongodb) or mySQL.
 I decided to make an online recipes app where Each account holder should be able to Create, Read, Update, and Delete (CRUD) their own recipes.Website would be build by basic Front end Programs (HTML,CSS,Javascript), Python, Mongodb and modules what helps to connect program with database.
 
 
-UX
-1.For what group of people is website Recipe ME?
+
+## 1.For what group of people is website Recipe ME?
 My idea was an site where anyone can write and share recipe with the other user.
 Side that would be free to view recipes for anyone with options of create , edit and delete an recipe for loged in users.
 They could use that side as the cook notebook also it would be shared to the others what is giving them oportunity to learn and enjoy someones amazing dish.
@@ -56,8 +56,7 @@ Every page has navbar coloured teal with navigation to the other pages and light
 Wireframe:
 -
 
-
-Features:
+:
 Contain features visible for everyone and people loged in.
 Include add , delate, edit and view recipe (CRUD) and more.
 1.Existing Features
