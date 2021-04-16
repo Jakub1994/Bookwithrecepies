@@ -53,9 +53,23 @@ Every page has navbar coloured teal with navigation to the other pages and light
     Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description", "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
 - Logout : Button what takes user out of the account.
 
+Wireframe:
+-
 
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+Features:
+Contain features visible for everyone and people loged in.
+Include add , delate, edit and view recipe (CRUD) and more.
+1.Existing Features
+- Home : Here are stock all recipes created by registered users.
+- Register : Users without account can create it here.
+- Log in : Thats the place where u have to give your data from registration to acces your account.
+- My Profile : In the first place Login is going to take you here , this is the page with the instruction and navigations for the users.
+    It has a mission to help everyone who log in.It is here where owner will inform the users about any changes in the app.
+- Add Recipe : Page with the task to add recipe , In order to to give the owner of the recipe the opportunity to describe the food in detail is placed here vegan or not vegan lever and seven inputs. They are arranged in order, invoking from above: Dish name, Image URL, Short description, Ingridiens, Step 1, Step 2, Step 3. 
+- Log out : Thats the button responsible for the user's exit from the account.   
+
+App would be modified and as a creator i will add there now options.
 
 Existing Features
 Feature 1 - allows users X to achieve Y, by having them fill out Z
