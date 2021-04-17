@@ -8,12 +8,12 @@ I decided to make an online recipes app where Each account holder should be able
 
 
 
-## 1.For what group of people is website Recipe ME?
+## For what group of people is website Recipe ME?
 My idea was an site where anyone can write and share recipe with the other user.
 Side that would be free to view recipes for anyone with options of create , edit and delete an recipe for loged in users.
 They could use that side as the cook notebook also it would be shared to the others what is giving them oportunity to learn and enjoy someones amazing dish.
 
-3. First time Visitors expectations:
+1. First time Visitors expectations:
 - As a Visitor I expect to be able to easily navigate throught the site.
 - As a Visitor I expect to be able get information about recipe to create it at home.
 - As a Visitor I want to register my account
@@ -30,7 +30,7 @@ great to see his other projects/works
 - As a User I want to get in touch with the owner if i want to ask about any changes 
 in the feature
 
-Design:
+# Design:
 I tried create simple , fresh looking site where i could use materializedcss.
 Every page has navbar coloured teal with navigation to the other pages and light green footer where user can find how to contact owner , and find some social media services with his work.
 1. Color Scheme:
@@ -54,12 +54,10 @@ Every page has navbar coloured teal with navigation to the other pages and light
 - Logout : Button what takes user out of the account.
 
 Wireframe:
--
 
-:
-Contain features visible for everyone and people loged in.
-Include add , delate, edit and view recipe (CRUD) and more.
-1.Existing Features
+
+# Features
+1. Existing Features
 - Home : Here are stock all recipes created by registered users.
 - Register : Users without account can create it here.
 - Log in : Thats the place where u have to give your data from registration to acces your account.
@@ -67,8 +65,16 @@ Include add , delate, edit and view recipe (CRUD) and more.
     It has a mission to help everyone who log in.It is here where owner will inform the users about any changes in the app.
 - Add Recipe : Page with the task to add recipe , In order to to give the owner of the recipe the opportunity to describe the food in detail is placed here vegan or not vegan lever and seven inputs. They are arranged in order, invoking from above: Dish name, Image URL, Short description, Ingridiens, Step 1, Step 2, Step 3. 
 - Log out : Thats the button responsible for the user's exit from the account.   
-
-App would be modified and as a creator i will add there now options.
+- Navbar : Navigation for the whole website.It's a bar where by pressing one of the buttons, you will go to the other page.
+- Responsive Navbar for the mobile device.
+- Footer : Is located under the every content of the site.It contain the contact options like : Email, phone number, social media.  
+2. Future Features:
+App would be modified and as a creator i will add there new functions.
+- Search button
+- Update add recipe page. Image URL input its an spot where author have to copy url adress from the other page. I want to change it and create file input where he can update the picture from his private  device gallery.
+- Shop page - Users can locate here pictures with links from where the others can buy the kitchen equipment liked by them, There would be an input for discribe why that item is needed for.
+- Like button on the recipe . It would show what dish is the most popular on the page.
+- Communication Page - people can communicate there if anyone have the problems with any steps in the recipe.
 
 Existing Features
 Feature 1 - allows users X to achieve Y, by having them fill out Z
