@@ -53,7 +53,12 @@ Every page has navbar coloured teal with navigation to the other pages and light
     Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description", "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
 - Logout : Button what takes user out of the account.
 
-Wireframe:
+### Wireframes:
+- [Home](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2303)
+- [Register](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2304)
+- [Log in](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=4%3A2241)
+- [My Profile](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=4%3A2286)
+- [Add Recipe](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=5%3A6)
 
 
 # Features
