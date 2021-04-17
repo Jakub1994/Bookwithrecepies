@@ -88,10 +88,10 @@ App would be modified and as a creator i will add there new functions.
 - Javascript
 - Mongodb
 - Python:
-    1.Flask 
-    2.Flask_pymongo
-    3.Werkzeug.security
-    4.Bson.objectid
+1. Flask 
+2. Flask_pymongo
+3. Werkzeug.security
+4. Bson.objectid
 ## Framework Libraries
 - MaterializeCss
 - JQuery
