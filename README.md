@@ -62,7 +62,7 @@ Every page has navbar coloured teal with navigation to the other pages and light
 
 
 # Features
-1. Existing Features
+## Existing Features:
 - Home : Here are stock all recipes created by registered users.
 - Register : Users without account can create it here.
 - Log in : Thats the place where u have to give your data from registration to acces your account.
@@ -73,7 +73,7 @@ Every page has navbar coloured teal with navigation to the other pages and light
 - Navbar : Navigation for the whole website.It's a bar where by pressing one of the buttons, you will go to the other page.
 - Responsive Navbar for the mobile device.
 - Footer : Is located under the every content of the site.It contain the contact options like : Email, phone number, social media.  
-2. Future Features:
+## Future Features:
 App would be modified and as a creator i will add there new functions.
 - Search button
 - Update add recipe page. Image URL input its an spot where author have to copy url adress from the other page. I want to change it and create file input where he can update the picture from his private  device gallery.
@@ -81,16 +81,20 @@ App would be modified and as a creator i will add there new functions.
 - Like button on the recipe . It would show what dish is the most popular on the page.
 - Communication Page - people can communicate there if anyone have the problems with any steps in the recipe.
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-Features Left to Implement
-Another feature idea
-Technologies Used
+# Technologies Used
+## Programs
+- HTML
+- CSS
+- Javascript
+- Mongodb
+- Python:
+    1.Flask 
+    2.Flask_pymongo
+    3.Werkzeug.security
+    4.Bson.objectid
+## Framework Libraries
+- MaterializeCss
+- JQuery
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 JQuery
