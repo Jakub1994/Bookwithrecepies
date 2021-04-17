@@ -102,39 +102,39 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - Visual Studio Code : Windows platform used to modiffy the project on my device.
 # Testing
 App was tested on the few devices.In the every page were checked buttons , navigation, database response, account response.
-## Home 
+### Home 
 In this page i checked :
 - Collapse effect in the recipes
 - Delate button response
 - Edit button functionality
 - Recipes writed in "Add recipe" side, Get developed as should.
-## Register
+### Register
 In this page:
 - Username input: maximum and minimum characters, green colour effect under the text while text is passed and is ready to go furder, red if need more corrects. 
 - Password input: maximum and minimum characters , text hideed,  green effect under the text when everything is entered correctly, red if need get modified.
 - submit button sending filled inputs to mongodb database and create new account.
 - under the submition navigation to the login.
-## Log in 
+### Log in 
 Everything that was sent to mongodb by the registration page has been put into empty pools to see if this data creates a new account,
 everything on this page has the same properties as on the registration page,
 the text under the button for data approval takes us to registration.
-## My Profile
+### My Profile
 After loging in to the site ,it takes us to the "My Profile". On this site has been checked:
 - effect provided for the description
 - navigation to the pages provided to describe
-## Add Recipe
+### Add Recipe
 As the last page I decided to test "Add Recipe"
 In this part of the app needful was to check :
 - 7 text inputs : maximum and minimum characters
 - vegan on or off lever
 - if submit button send information to the database and then sends it to "Home" as a recipe.
-## Logout
+### Logout
 Functionality of the button what should exit from our profile account.
-## Footer
+### Footer
 - Social media links take us to the Github,Linkedin,Facebook
 - hover effect on the email link makes him pink when you point on.
 - effect mailto on the email
-## Navbar
+### Navbar
 It was really important part of the project to create working navbar, navigation elements what were checked:
 - Home
 - Register
@@ -144,7 +144,10 @@ It was really important part of the project to create working navbar, navigation
 - Logout
 - Recipe ME Logo navigation to home page
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+## Testing was performed in this order:
+1. Home : While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on them, I redirected us to registration by clicking the button in navbar
+"Register"
+
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
