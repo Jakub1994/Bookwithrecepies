@@ -95,7 +95,6 @@ App would be modified and as a creator i will add there new functions.
 ## Framework Libraries
 - MaterializeCss: Framework based on the Css . I used it for design my project.
 - JQuery : Used to simplify DOM manipulation.
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 ## Coding and Storing Platforms:
 - Github: Used to store my project and and also throughout the creation process for all the needed changes.
 - Gitpod: Platform used for coding and storing repository.
@@ -145,24 +144,33 @@ It was really important part of the project to create working navbar, navigation
 - Recipe ME Logo navigation to home page
 
 ## Testing was performed in this order:
-1. Home : While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on them, I redirected us to registration by clicking the button in navbar
+1. [Home](http://vegan-recipies-book.herokuapp.com/recipes) : While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on them, I redirected us to registration by clicking the button in navbar.
 "Register"
+2. [Register](http://vegan-recipies-book.herokuapp.com/register): Here the most important thing was to check if the account is created after sending the data and the user can connect, despite this link to the log in under submit button, everything worked fine except, after pressing the submit button the page showed error, but the account can log in and it worked as should.
+Next i went to login check if connection to account works.
+3. [Log in](http://vegan-recipies-book.herokuapp.com/login): To log in I needed an account made in registration, entering it in the free text fields and clicking submit on this page. In this way, I checked whether the account created earlier works.
+I was also looking at what would happen after clicking the link below "Click here", what should have happened and it redirected me to the registration page.
+4. [My Profile](http://vegan-recipies-book.herokuapp.com/myProfile/ostach20): (To check the rest of content u need to create an account and log in look carefully above )Then, after pressing the log in button, it sent us to "My Profile". Here, after reading the text under 'Hello Username', I clicked on
+the inscription Home and the text describing this part of the application appeared to me, I checked the rest as well and they worked, I had to check the navigation on the icon with the name of the page, it worked.After careful consideration I could go to "Add Recipe".
+5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes): In this part I checked all the free fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it sent data to my mongodb. After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
+6. [Home](http://vegan-recipies-book.herokuapp.com/recipes) (functionality of the Edit, Delate Button): After turning on "Home" again, I can see that the data has been redirected to the fields where it should be, to check it carefully I clicked on the added recipe and the rest of the information appeared. There were also two buttons, the first "Edit" and the second "Delate". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add Recipe".
+after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
+7. Footer : So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
+After that, you could enter an email to the owner of the website.
+8. Navbar : Has been carefully inspected by checking the rest of the pages
 
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+# Deployment:
+1.[Github]():
+To Deploy the project to a hosting platform I had to:
+- Open the Github Website.
+- Login there.
+- Go to your repositories.
+- Choose one
+- At the top of the Repository - just above & to the right of "Settings"  and left site of the "Star" on the menu, press the "Fork" Button.
+- click Create the create a copy of the Original in github
+2.[Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
+-
 
 Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
