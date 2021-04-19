@@ -161,26 +161,59 @@ After that, you could enter an email to the owner of the website.
 
 
 # Deployment:
-1.[Github]():
-To Deploy the project to a hosting platform I had to:
+### Github:
+To Deploy the project to a hosting platform (Github) I had to:
 - Open the Github Website.
 - Login there.
 - Go to your repositories.
 - Choose one
 - At the top of the Repository - just above & to the right of "Settings"  and left site of the "Star" on the menu, press the "Fork" Button.
-- click Create the create a copy of the Original in github
-2.[Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
--
+- click Create a copy of the Original in github
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+### [Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
+ To deploy on the Heroku u need:
+1. First create env file where u will put : 
+- import os
+- IP set on 0.0.0.0  or your own
+- MONGODB_NAME Name of your MONGODB collection
+- MONGO_URL link to your MONGODB cluster - to do this u have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
+- SECRET_KEY - set it as the most difficult key what u can think about , i used for that page [Randomkeygen](https://randomkeygen.com/)
+- PORT set as 5000 or as u want
+your env.py should look like :
+import os
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "yourkey")
+os.environ.setdefault("MONGO_URI", "yourcluster")
+os.environ.setdefault("MONGO_DBNAME", "CookingBook")
+2.We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
+2. Create a simple text file named Procfile without the file extension, ie Procfile.txt is not valid
+3. Open procfile and tell heroku how to run the website by writing there python3 app.py
+4. Open heroku Website,From there u have to create new app and open it
+5. Go to setting , There u have to set the Config Vars.Set the:  IP, MONGODB_NAME, MONGO_URL, PORT, SECRET_KEY.
+your setting should look like :
+- IP : 0.0.0.0
+- MONGODB_NAME : Name of your collection in Mongodb
+- MONGO_URL : url for your cluster
+- PORT : 5000
+- SECRET_KEY : your secret key
+6. Since u did every step from before u can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
+7. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+
+1.IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
+2.MONGODB_NAME - Name of yours mongodb collection
+3.MONGO_URL - URL connecting to your MONGODB cluster
+4.SECRET_KEY - Its the security key 
+
+# Credits
+
+
+2. Acknowledgements
+- I was inspired by Code Institute Mini Project in Python Module.
+- I used ready to use Materializecss components and javascript funtions
+
 
 Credits
 Content
