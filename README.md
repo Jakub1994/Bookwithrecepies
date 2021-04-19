@@ -209,16 +209,15 @@ your setting should look like :
 
 # Credits
 
+I really thankfull for the Code institute ,for big help .
+For tutors , mentor and whole institution as if not them i wouldn't be prepered for this hard and ambitious project.
+I think without the Python module miniproject i couldn't do this in time.
+1. Media
+Pictures used here i took from:
+- https://www.bbcgoodfood.com/recipes/pumpkin-curry-chickpeas
+- https://food52.com/recipes/1068-classic-french-potato-puree-extra-smooth
+- https://www.goodhousekeeping.com/food-recipes/healthy/a35231/chimichurri-cauliflower-steaks/
 
-2. Acknowledgements
+3. Acknowledgements
 - I was inspired by Code Institute Mini Project in Python Module.
 - I used ready to use Materializecss components and javascript funtions
-
-
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
