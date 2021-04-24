@@ -2,27 +2,28 @@
 
 
 # Recipe ME
-My name is Jakub Ostaszewski and as I am student of Code Institute i was required to create my third Milestone Project
-, which should contain Python and one of the database noSQL(Mongodb) or mySQL.
-I decided to make an online recipes app where Each account holder should be able to Create, Read, Update, and Delete (CRUD) their own recipes.Website would be build by basic Front end Programs (HTML,CSS,Javascript), Python, Mongodb and modules what helps to connect program with database.
+My name is Jakub Ostaszewski and, as a student at Code Institute, I was required to create a third Milestone Project
+using Python and one of the following databases: noSQL(Mongodb) or mySQL.
+I decided to make an online recipes app where each account holder should be able to Create, Read, Update, and Delete (CRUD) their own recipes.
+
+The website would be build by basic Front end Programs (HTML,CSS,Javascript), Python, Mongodb and modules what helps to connect program with database.
 
 
 
-## For what group of people is website Recipe ME?
-My idea was an site where anyone can write and share recipe with the other user.
-Side that would be free to view recipes for anyone with options of create , edit and delete an recipe for loged in users.
-They could use that side as the cook notebook also it would be shared to the others what is giving them oportunity to learn and enjoy someones amazing dish.
+## Who is Recipe ME intended for?
+My idea was a site where anyone can write and share recipes with other people.
+I want it to allow anyone to view all recipes but only registered users to be able to create, edit and delete their own recipes.
+It should also enable the user(s) to use the site as a cooking notebook that could be shared with others giving them the oportunity to try and learn new dishes they would probably never hear of.
 
 1. First time Visitors expectations:
-- As a Visitor I expect to be able to easily navigate throught the site.
-- As a Visitor I expect to be able get information about recipe to create it at home.
-- As a Visitor I want to register my account
-- As a Visitor I want to access my account
-- As a Visitor I want to contact owner if i would have any issue
-- As a Visitor I can get interested of the owner work thats why would be
-great to see his other projects/works
+- As a Visitor, I want the navigation throught the site to be easy.
+- As a Visitor, I want to be able to find all the details necessary for me to recreate any dish at home.
+- As a Visitor, I want to create an account for myself.
+- As a Visitor, I want to be able to contact the creator in case of technical issues.
+- As a Visitor, I want to be able to see who the creator is and what was the idea behind the app.
+- 
 2. Registered User Goals:
-- As a User I want to log in to my profile
+- As a User, I want to access my account.
 - As a User I want to log out from my profile
 - As a User I want to be able remove my recipe
 - As a User I want to be able to add recipe
