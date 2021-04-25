@@ -18,35 +18,37 @@ It should also enable the user(s) to use the site as a cooking notebook that cou
 1. First time Visitors expectations:
 - As a Visitor, I want the navigation throught the site to be easy.
 - As a Visitor, I want to be able to find all the details necessary for me to recreate any dish at home.
-- As a Visitor, I want to create an account for myself.
-- As a Visitor, I want to be able to contact the creator in case of technical issues.
+- As a Visitor, I want to be able to contact the creator in case of any issues.
 - As a Visitor, I want to be able to see who the creator is and what was the idea behind the app.
 - 
 2. Registered User Goals:
-- As a User, I want to access my account.
-- As a User I want to log out from my profile
-- As a User I want to be able remove my recipe
-- As a User I want to be able to add recipe
-- As a User I want to be able to Modify my recipe
-- As a User I want to get in touch with the owner if i want to ask about any changes 
-in the feature
+- As a User, I want to create an account for myself.
+- As a User, I want to access my account and profile.
+- As a User, I want to log out from my account.
+- As a User, I want to be able remove any of the recipes I posted.
+- As a User, I want to be able to add new recipes.
+- As a User, I want to be able to edit my recipes.
+- As a User, I want to be able to contact the creator in case of any issues.
 
 # Design:
-I tried create simple , fresh looking site where i could use materializedcss.
-Every page has navbar coloured teal with navigation to the other pages and light green footer where user can find how to contact owner , and find some social media services with his work.
+I tried to create a simple, fresh looking site where I could use materializedcss.
+Every page has a teal colored navigation bar on the very top with the other sections' named-bottons in order to access them.
+There is also a light-green footer, where the user can find the creator's contact, and his social media profiles linked.
 1. Color Scheme:
-- background color of the page is white
-- elements like cards are light green that's good match with the pictures from the recipe's
-- footer links are white
-- email link in footer is red with pink hoover.
+- The backgroung is always white.
+- The recipes' names and pictures are enclosed in a light-green rectangular-shaped text box and, when clicked on, the intructions for the respective dish show up.
+- The email link in footer is red and it has a pink hoover.
 2.Pages
 
-- Home : Possess cards with recipes. Cards are green with title,
-    image and collapse effect while clicked.Collapse text is black with white background.
-    On the botton of the page is placed sign who's created that description.
-    Since the collapsed recipe is yours ,Edit and Delate buttons should appear on the left side below the text.
+- Home : 
+    This is where the recipes are listed, one under another.
+    Every text box is green and the name of each dish is written on them, in black, on the left upper corner, next to dish's picture, located on the right of its title.
+    When clicked on, a collapse effect text shows up, written in black on a white background.
+    On the right lower corner of the recipe, there is a "Created by" section, followed by the name of the recipe's author.
+    The recipe's author will also have the options to edit or delete that recipe on the left lower corner.
 
-- My Profile : Contain whole description of the app , it shows how to use pages
+- My Profile :
+    yContain whole description of the app , it shows how to use pages
     and manage your knowlage on the app. Here owner would write
     how he is gonna change the page.
 
