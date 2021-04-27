@@ -42,20 +42,26 @@ There is also a light-green footer, where the user can find the creator's contac
 
 - Home : 
     This is where the recipes are listed, one under another.
-    Every text box is green and the name of each dish is written on them, in black, on the left upper corner, next to dish's picture, located on the right of its title.
+    Every text box is green and the name of each dish is written on them, in black, on the left upper corner, next to dish's picture, located on the right of its       title.
     When clicked on, a collapse effect text shows up, written in black on a white background.
     On the right lower corner of the recipe, there is a "Created by" section, followed by the name of the recipe's author.
     The recipe's author will also have the options to edit or delete that recipe on the left lower corner.
-
+- Login:
+    
+    
+    
 - My Profile :
-    yContain whole description of the app , it shows how to use pages
+    Contain whole description of the app , it shows how to use pages
     and manage your knowlage on the app. Here owner would write
     how he is gonna change the page.
-
+    
 - Add Recipe : Allows user to add his own dish idea to the home page.
-    Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description", "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
+    Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description",     "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
+    
 - Logout : Button what takes user out of the account.
 
+- Register:
+    
 ### Wireframes:
 - [Home](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2303)
 - [Register](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2304)
@@ -96,8 +102,8 @@ App would be modified and as a creator i will add there new functions.
 3. Werkzeug.security
 4. Bson.objectid
 ## Framework Libraries
-- MaterializeCss: Framework based on the Css . I used it for design my project.
-- JQuery : Used to simplify DOM manipulation.
+- MaterializeCss is a framework based on Css. I used it to design the project.
+- JQuery, used to simplify DOM manipulation.
 ## Coding and Storing Platforms:
 - Github: Used to store my project and and also throughout the creation process for all the needed changes.
 - Gitpod: Platform used for coding and storing repository.
@@ -105,11 +111,11 @@ App would be modified and as a creator i will add there new functions.
 # Testing
 App was tested on the few devices.In the every page were checked buttons , navigation, database response, account response.
 ### Home 
-In this page i checked :
+In this page I checked :
 - Collapse effect in the recipes
 - Delate button response
 - Edit button functionality
-- Recipes writed in "Add recipe" side, Get developed as should.
+- Recipes written in "Add recipe" side, Get developed as should.
 ### Register
 In this page:
 - Username input: maximum and minimum characters, green colour effect under the text while text is passed and is ready to go furder, red if need more corrects. 
@@ -121,7 +127,7 @@ Everything that was sent to mongodb by the registration page has been put into e
 everything on this page has the same properties as on the registration page,
 the text under the button for data approval takes us to registration.
 ### My Profile
-After loging in to the site ,it takes us to the "My Profile". On this site has been checked:
+After loging into the site, it takes us to the "My Profile". On this site has been checked:
 - effect provided for the description
 - navigation to the pages provided to describe
 ### Add Recipe
@@ -133,17 +139,17 @@ In this part of the app needful was to check :
 ### Logout
 Functionality of the button what should exit from our profile account.
 ### Footer
-- Social media links take us to the Github,Linkedin,Facebook
+- Social media links take us to the Github, Linkedin and Facebook.
 - hover effect on the email link makes him pink when you point on.
 - effect mailto on the email
 ### Navbar
 It was really important part of the project to create working navbar, navigation elements what were checked:
 - Home
 - Register
-- Login
-- My Profile
-- Add Recipe
-- Logout
+- Login:
+    - My Profile
+    - Add Recipe
+    - Logout
 - Recipe ME Logo navigation to home page
 
 ## Testing was performed in this order:
@@ -166,17 +172,16 @@ After that, you could enter an email to the owner of the website.
 # Deployment:
 ### Github:
 To Deploy the project to a hosting platform (Github) I had to:
-- Open the Github Website.
-- Login there.
+- Open the Github Website and login.
 - Go to your repositories.
-- Choose one
+- Choose one.
 - At the top of the Repository - just above & to the right of "Settings"  and left site of the "Star" on the menu, press the "Fork" Button.
 - click Create a copy of the Original in github
 
 ### [Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
- To deploy on the Heroku u need:
-1. First create env file where u will put : 
-- import os
+ How to deploy on Heroku:
+1. First create env file where you will put : 
+- Import os
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
 - MONGO_URL link to your MONGODB cluster - to do this u have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
@@ -193,8 +198,8 @@ os.environ.setdefault("MONGO_DBNAME", "CookingBook")
 2.We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
 2. Create a simple text file named Procfile without the file extension, ie Procfile.txt is not valid
 3. Open procfile and tell heroku how to run the website by writing there python3 app.py
-4. Open heroku Website,From there u have to create new app and open it
-5. Go to setting , There u have to set the Config Vars.Set the:  IP, MONGODB_NAME, MONGO_URL, PORT, SECRET_KEY.
+4. Open heroku Website,From there you have to create new app and open it
+5. Go to settings, There u have to set the Config Vars.Set the:  IP, MONGODB_NAME, MONGO_URL, PORT, SECRET_KEY.
 your setting should look like :
 - IP : 0.0.0.0
 - MONGODB_NAME : Name of your collection in Mongodb
@@ -212,15 +217,14 @@ your setting should look like :
 
 # Credits
 
-I really thankfull for the Code institute ,for big help .
-For tutors , mentor and whole institution as if not them i wouldn't be prepered for this hard and ambitious project.
-I think without the Python module miniproject i couldn't do this in time.
+I am really thankful to the Code Institute student care team, specially the tutors, who helped me throughout this project.
+I would like to mention that, without the Python module miniproject, I don't thinks I could have done this ambitious project on time.
 1. Media
-Pictures used here i took from:
+The pictures in the recipes were downloaded from the next sites :
 - https://www.bbcgoodfood.com/recipes/pumpkin-curry-chickpeas
 - https://food52.com/recipes/1068-classic-french-potato-puree-extra-smooth
 - https://www.goodhousekeeping.com/food-recipes/healthy/a35231/chimichurri-cauliflower-steaks/
 
 3. Acknowledgements
 - I was inspired by Code Institute Mini Project in Python Module.
-- I used ready to use Materializecss components and javascript funtions
+- I used ready to use Materializecss components and Javascript funtions.
