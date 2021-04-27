@@ -31,7 +31,7 @@ It should also enable the user(s) to use the site as a cooking notebook that cou
 - As a User, I want to be able to contact the creator in case of any issues.
 
 # Design:
-I tried to create a simple, fresh looking site where I could use materializedcss.
+I tried to create a simple, fresh looking site where I could use Materializedcss.
 Every page has a teal colored navigation bar on the very top with the other redirecting bottons to the rest of the sections in order to access them.
 There is also a light-green footer, where the user can find the creator's contact, and his social media profiles linked.
 1. Color Scheme:
@@ -53,18 +53,23 @@ There is also a light-green footer, where the user can find the creator's contac
     After that, the next pages will show on the navigation bar:
     
     - My Profile :
-            This page contains a description of the app , it shows how to use pages
-        and manage your knowlage on the app. Here owner would write
-        how he is gonna change the page.
     
-    - Add Recipe : Allows user to add his own dish idea to the home page.
-        Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short          Description",     "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
+        This page tells contains a description of all the app's features in order to make the best of it.
+        Also, in case of future uptades of the software, the new funtions will be explained here.
     
-    - Logout : Button what takes user out of the account.
-
-
-
+    - Add Recipe :
+        
+        This is where the registered user can add his own recipies, by filling in the next sections:
+        "Dish Name": what it actually is.
+        "Image URL": a URL from where to take the picture that will appear toghether with the name.
+        "Short Description": a couple of word to let other users know what this dish is recommended for.
+        "Ingredients": a list of all the required ingredients and the exact quantities.
+        "Step 1", "Step 2" and "Step 3": a stept by step precise explanation of what to do.
+        At the very end, there is a "Vegan or not" lever that makes it easier for other user to find vegan recipes.
+        Lastly, there is a "Submit" button at the very bottom to save all the above details and add the recipe to the home page.
     
+    - Logout : As its name suggests, this enables the user to sign off their account.
+
 ### Wireframes:
 - [Home](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2303)
 - [Register](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2304)
@@ -75,24 +80,28 @@ There is also a light-green footer, where the user can find the creator's contac
 
 # Features
 ## Existing Features:
-- Navbar : Navigation for the whole website.It's a bar where by pressing one of the buttons, you will go to the other page.
+- Navbar : Navigation bar fixed at the very top of the page at all times. It contains the redirecting buttons to all the pages.
 - Responsive Navbar for the mobile device.
-- Footer : Is located under the every content of the site.It contain the contact options like : Email, phone number, social media.
+- Footer : located at the very bottom of every page, it is where the owner contact details are: email, phone number and social media.
 - Home : here, is where all the recipes ever posted are.
 - Register : the users without an account can create one here.
-- Log in : Thats the place where u have to give your data from registration to acces your account.
-- My Profile : In the first place Login is going to take you here , this is the page with the instruction and navigations for the users.
-    It has a mission to help everyone who log in.It is here where owner will inform the users about any changes in the app.
-- Add Recipe : Page with the task to add recipe , In order to to give the owner of the recipe the opportunity to describe the food in detail is placed here vegan or not vegan lever and seven inputs. They are arranged in order, invoking from above: Dish name, Image URL, Short description, Ingridiens, Step 1, Step 2, Step 3. 
-- Log out : Thats the button responsible for the user's exit from the account.   
+- Log in : This oage enables the registered user to access his account and choose one of the next ones:
+    
+    - My Profile: 
+        Once logged in, the user will be redirected here, where there is a description of the of what every page is for, so he/she can make the best of the app.
+        Also, if an uodate occurs, the new functions will be explained here.
+    
+    - Add Recipe: 
+        This is where the registered users can add new recipes. They are required to input the name of the dish, a URL with its picture, a short description, a list         of ingredients and a step by step guide. The user must also select whether it is a vegan dish or not.
+        
+    - Log out: this button enables the user to exit their account.
   
-## Future Features:
-App would be modified and as a creator i will add there new functions.
-- Search button
-- Update add recipe page. Image URL input its an spot where author have to copy url adress from the other page. I want to change it and create file input where he can update the picture from his private  device gallery.
-- Shop page - Users can locate here pictures with links from where the others can buy the kitchen equipment liked by them, There would be an input for discribe why that item is needed for.
-- Like button on the recipe . It would show what dish is the most popular on the page.
-- Communication Page - people can communicate there if anyone have the problems with any steps in the recipe.
+## Update improvements:
+There are several features that could be built on:
+- A search button that permits the user to find a specific recipe in shorter time.
+- Allow the "Add recipe" page to admit pictures uploaded from the user's device, too.
+- A Shop section where the users can find the links to the kitchen tools recomended by the recipes's authors and buy them online.
+- A "Like" button under every recipe to show which ones are more popular, as well as a comments section for users to communicate with the recipe's author if needed.
 
 # Technologies Used
 ## Programs
@@ -109,45 +118,43 @@ App would be modified and as a creator i will add there new functions.
 - MaterializeCss is a framework based on Css. I used it to design the project.
 - JQuery, used to simplify DOM manipulation.
 ## Coding and Storing Platforms:
-- Github: Used to store my project and and also throughout the creation process for all the needed changes.
-- Gitpod: Platform used for coding and storing repository.
+- Github: used to store my project and throughout the creation process for all the needed modifications.
+- Gitpod: a platform used to code and store the repository.
 - Visual Studio Code : Windows platform used to modiffy the project on my device.
 # Testing
-App was tested on the few devices.In the every page were checked buttons , navigation, database response, account response.
-### Home 
-In this page I checked :
-- Collapse effect in the recipes
-- Delate button response
-- Edit button functionality
-- Recipes written in "Add recipe" side, Get developed as should.
+The app was tested on several different devices. All buttons, the navigation, the database and account responsiveness where tested in each and every page.
+Tested in every page:
+### Home
+- The collapse effect for every recipe.
+- The delete button responsiveness.
+- The edit button functionality.
+- If the recipes written in the "Add recipe" sections were added to the home page correctly.
 ### Register
-In this page:
-- Username input: maximum and minimum characters, green colour effect under the text while text is passed and is ready to go furder, red if need more corrects. 
+- Username input: maximum and minimum number of characters, green color effect under the text while text is passed and is ready to go further, red if need more corrects. 
 - Password input: maximum and minimum characters , text hideed,  green effect under the text when everything is entered correctly, red if need get modified.
-- submit button sending filled inputs to mongodb database and create new account.
+- Whether the "Submit" button sends the user's input to the mongodb database and creates a new account.
 - under the submition navigation to the login.
-### Log in 
-Everything that was sent to mongodb by the registration page has been put into empty pools to see if this data creates a new account,
+1### Log in 
+Everything sent to MONGODB in the "Register" page has been put into empty pools to see if this data creates a new account.
 everything on this page has the same properties as on the registration page,
 the text under the button for data approval takes us to registration.
 ### My Profile
-After loging into the site, it takes us to the "My Profile". On this site has been checked:
-- effect provided for the description
-- navigation to the pages provided to describe
+- Whether the user is redirected to the "My Profile" page right after logging in.
+- Whether the description of every page (Home, My Profile, Log out) appears after clicking on its name.
+- The navigation to the every page when clicking on their respective buttons.
 ### Add Recipe
-As the last page I decided to test "Add Recipe"
 In this part of the app needful was to check :
 - 7 text inputs : maximum and minimum characters
 - vegan on or off lever
 - if submit button send information to the database and then sends it to "Home" as a recipe.
 ### Logout
-Functionality of the button what should exit from our profile account.
+Whether it exits the user's account or not.
 ### Footer
-- Social media links take us to the Github, Linkedin and Facebook.
-- hover effect on the email link makes him pink when you point on.
-- effect mailto on the email
+- Social media links lead to the Github, Linkedin and Facebook profiles of the owner.
+- The hoover effect of the email link: whether it becomes pink when clicked on.
+- The email's mailto effect.
 ### Navbar
-It was really important part of the project to create working navbar, navigation elements what were checked:
+A really important part of the project was to create working navbar, the navigation elements that were checked:
 - Home
 - Register
 - Login:
@@ -231,4 +238,4 @@ The pictures in the recipes were downloaded from the next sites :
 
 3. Acknowledgements
 - I was inspired by Code Institute Mini Project in Python Module.
-- I used ready to use Materializecss components and Javascript funtions.
+- I used ready to use Materializedcss components and Javascript functions.
