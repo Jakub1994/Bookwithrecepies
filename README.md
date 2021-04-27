@@ -134,7 +134,7 @@ Tested in every page:
 - Password input: whether the maximum and minimum number of characters is implemented, the text is hidden, and the bar under the input turns green when the input is correct or red when the input is incorrect.
 - Whether the "Register" button sends the user's input to the mongodb database and creates a new account.
 - Whether the navigation button under the "Register" one takes to the "Login" page. 
-1### Log in 
+### Log in 
 Everything sent to MONGODB in the "Register" page has been put into empty pools to see if this data creates a new account.
 - Username input: whether the maximum and minimum number of characters is implemented and the bar under the input turns green when the input is correct or red when the input is incorrect.
 - Password input: whether the maximum and minimum number of characters is implemented, the text is hidden, and the bar under the input turns green when the input is correct or red when the input is incorrect.
@@ -205,9 +205,9 @@ To Deploy the project to a hosting platform (Github) I had to:
 - Import os
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
-- MONGO_URL link to your MONGODB cluster - to do this u have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
+- MONGO_URL link to your MONGODB cluster - to do this you have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
 - SECRET_KEY - set it as the most difficult key what u can think about , i used for that page [Randomkeygen](https://randomkeygen.com/)
-- PORT set as 5000 or as u want
+- PORT set as 5000 or as you want
 your env.py should look like :
 import os
 
@@ -228,8 +228,8 @@ your setting should look like :
 - MONGO_URL : url for your cluster
 - PORT : 5000
 - SECRET_KEY : your secret key
-    7. Since u did every step from before you can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
-    8. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
+    7. Since you did every step from before you can go to Deploy section in heroku, scroll down and connect app to the github, click enable automatic deploys.
+    8. At the bottom of the page, click on Deploy Branch, make sure the master branch is selected
 
 
 1. IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
