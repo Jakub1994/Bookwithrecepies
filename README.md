@@ -61,6 +61,7 @@ There is also a light-green footer, where the user can find the creator's contac
 - Logout : Button what takes user out of the account.
 
 - Register:
+
     
 ### Wireframes:
 - [Home](https://www.figma.com/file/T5CSxj5MMuI8EBZor7FClk/Sanity-Sketching-Kit-(Community)?node-id=2%3A2303)
@@ -72,16 +73,17 @@ There is also a light-green footer, where the user can find the creator's contac
 
 # Features
 ## Existing Features:
-- Home : Here are stock all recipes created by registered users.
-- Register : Users without account can create it here.
+- Navbar : Navigation for the whole website.It's a bar where by pressing one of the buttons, you will go to the other page.
+- Responsive Navbar for the mobile device.
+- Footer : Is located under the every content of the site.It contain the contact options like : Email, phone number, social media.
+- Home : here, is where all the recipes ever posted are.
+- Register : the users without an account can create one here.
 - Log in : Thats the place where u have to give your data from registration to acces your account.
 - My Profile : In the first place Login is going to take you here , this is the page with the instruction and navigations for the users.
     It has a mission to help everyone who log in.It is here where owner will inform the users about any changes in the app.
 - Add Recipe : Page with the task to add recipe , In order to to give the owner of the recipe the opportunity to describe the food in detail is placed here vegan or not vegan lever and seven inputs. They are arranged in order, invoking from above: Dish name, Image URL, Short description, Ingridiens, Step 1, Step 2, Step 3. 
 - Log out : Thats the button responsible for the user's exit from the account.   
-- Navbar : Navigation for the whole website.It's a bar where by pressing one of the buttons, you will go to the other page.
-- Responsive Navbar for the mobile device.
-- Footer : Is located under the every content of the site.It contain the contact options like : Email, phone number, social media.  
+  
 ## Future Features:
 App would be modified and as a creator i will add there new functions.
 - Search button
@@ -218,7 +220,7 @@ your setting should look like :
 # Credits
 
 I am really thankful to the Code Institute student care team, specially the tutors, who helped me throughout this project.
-I would like to mention that, without the Python module miniproject, I don't thinks I could have done this ambitious project on time.
+I would like to mention that, without the Python module miniproject, I don't think I could have done this ambitious project on time.
 1. Media
 The pictures in the recipes were downloaded from the next sites :
 - https://www.bbcgoodfood.com/recipes/pumpkin-curry-chickpeas
