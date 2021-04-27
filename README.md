@@ -32,35 +32,37 @@ It should also enable the user(s) to use the site as a cooking notebook that cou
 
 # Design:
 I tried to create a simple, fresh looking site where I could use materializedcss.
-Every page has a teal colored navigation bar on the very top with the other sections' named-bottons in order to access them.
+Every page has a teal colored navigation bar on the very top with the other redirecting bottons to the rest of the sections in order to access them.
 There is also a light-green footer, where the user can find the creator's contact, and his social media profiles linked.
 1. Color Scheme:
 - The backgroung is always white.
 - The recipes' names and pictures are enclosed in a light-green rectangular-shaped text box and, when clicked on, the intructions for the respective dish show up.
 - The email link in footer is red and it has a pink hoover.
-2.Pages
-
+2.Pages:
 - Home : 
     This is where the recipes are listed, one under another.
-    Every text box is green and the name of each dish is written on them, in black, on the left upper corner, next to dish's picture, located on the right of its       title.
-    When clicked on, a collapse effect text shows up, written in black on a white background.
+    Every text box is green and contains the dish name written in black (left side) and the dish picture (right side).
+    When clicked on, a collapse effect text shows up, written in black, on a white background.
     On the right lower corner of the recipe, there is a "Created by" section, followed by the name of the recipe's author.
     The recipe's author will also have the options to edit or delete that recipe on the left lower corner.
-- Login:
-    
-    
-    
-- My Profile :
-    Contain whole description of the app , it shows how to use pages
-    and manage your knowlage on the app. Here owner would write
-    how he is gonna change the page.
-    
-- Add Recipe : Allows user to add his own dish idea to the home page.
-    Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short Description",     "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
-    
-- Logout : Button what takes user out of the account.
-
 - Register:
+    This is where visitors can become registered users.
+    To do so, they have to fill in the username and password fields and then press "Register".
+- Login:
+    Once registered, the user can access their account by typing their username and password in this section.
+    After that, the next pages will show on the navigation bar:
+    
+    - My Profile :
+            This page contains a description of the app , it shows how to use pages
+        and manage your knowlage on the app. Here owner would write
+        how he is gonna change the page.
+    
+    - Add Recipe : Allows user to add his own dish idea to the home page.
+        Mentioning from the top first is the title and next the process of the creating recipe.It starts from input named "Dish Name", "Image URL", "Short          Description",     "Ingredients", "Step 1", "Step 2", "Step 3", Vegan or not lever and ends on the Submit button by what u accept the changes in inputs.
+    
+    - Logout : Button what takes user out of the account.
+
+
 
     
 ### Wireframes:
