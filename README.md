@@ -201,7 +201,7 @@ To Deploy the project to a hosting platform (Github) I had to:
 
 ### [Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
  How to deploy on Heroku:
-1. First create env file where you will put : 
+ 1. First create env file where you will put : 
 - Import os
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
@@ -216,7 +216,7 @@ os.environ.setdefault("PORT", "5000")
 os.environ.setdefault("SECRET_KEY", "yourkey")
 os.environ.setdefault("MONGO_URI", "yourcluster")
 os.environ.setdefault("MONGO_DBNAME", "CookingBook")
-2.We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
+2. We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
 2. Create a simple text file named Procfile without the file extension, ie Procfile.txt is not valid
 3. Open procfile and tell heroku how to run the website by writing there python3 app.py
 4. Open heroku Website,From there you have to create new app and open it
@@ -231,10 +231,10 @@ your setting should look like :
 7. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
 
 
-1.IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
-2.MONGODB_NAME - Name of yours mongodb collection
-3.MONGO_URL - URL connecting to your MONGODB cluster
-4.SECRET_KEY - Its the security key 
+1. IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
+2. MONGODB_NAME - Name of yours mongodb collection
+3. MONGO_URL - URL connecting to your MONGODB cluster
+4. SECRET_KEY - Its the security key 
 
 # Credits
 
