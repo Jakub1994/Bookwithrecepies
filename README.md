@@ -130,23 +130,25 @@ Tested in every page:
 - The edit button functionality.
 - If the recipes written in the "Add recipe" sections were added to the home page correctly.
 ### Register
-- Username input: maximum and minimum number of characters, green color effect under the text while text is passed and is ready to go further, red if need more corrects. 
-- Password input: maximum and minimum characters , text hideed,  green effect under the text when everything is entered correctly, red if need get modified.
-- Whether the "Submit" button sends the user's input to the mongodb database and creates a new account.
-- under the submition navigation to the login.
+- Username input: whether the maximum and minimum number of characters is implemented and the bar under the input turns green when the input is correct or red when the input is incorrect.
+- Password input: whether the maximum and minimum number of characters is implemented, the text is hidden, and the bar under the input turns green when the input is correct or red when the input is incorrect.
+- Whether the "Register" button sends the user's input to the mongodb database and creates a new account.
+- Whether the navigation button under the "Register" one takes to the "Login" page. 
 1### Log in 
 Everything sent to MONGODB in the "Register" page has been put into empty pools to see if this data creates a new account.
-everything on this page has the same properties as on the registration page,
-the text under the button for data approval takes us to registration.
+- Username input: whether the maximum and minimum number of characters is implemented and the bar under the input turns green when the input is correct or red when the input is incorrect.
+- Password input: whether the maximum and minimum number of characters is implemented, the text is hidden, and the bar under the input turns green when the input is correct or red when the input is incorrect.
+- Whether the "Login" button sends the user's to their account's "My Profile" page.
+- Whether the navigation button under the "Login" one takes to the "Register" page. 
 ### My Profile
 - Whether the user is redirected to the "My Profile" page right after logging in.
 - Whether the description of every page (Home, My Profile, Log out) appears after clicking on its name.
 - The navigation to the every page when clicking on their respective buttons.
 ### Add Recipe
-In this part of the app needful was to check :
-- 7 text inputs : maximum and minimum characters
-- vegan on or off lever
-- if submit button send information to the database and then sends it to "Home" as a recipe.
+
+- Whether the respective number of maximum and minimum characters in respected in all the user's inputs.
+- Whether the vegan on or off lever works.
+- Whether the  "Submit" button stores all inputs in the database and then sends it to the "Home" page as a recipe.
 ### Logout
 Whether it exits the user's account or not.
 ### Footer
@@ -154,30 +156,38 @@ Whether it exits the user's account or not.
 - The hoover effect of the email link: whether it becomes pink when clicked on.
 - The email's mailto effect.
 ### Navbar
-A really important part of the project was to create working navbar, the navigation elements that were checked:
+A really important part of the project was to create working navbar, the tested navigation buttons are:
 - Home
 - Register
 - Login:
     - My Profile
     - Add Recipe
     - Logout
-- Recipe ME Logo navigation to home page
+- Recipe ME Logo navigation to the home page
 
 ## Testing was performed in this order:
-1. [Home](http://vegan-recipies-book.herokuapp.com/recipes) : While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on them, I redirected us to registration by clicking the button in navbar.
-"Register"
-2. [Register](http://vegan-recipies-book.herokuapp.com/register): Here the most important thing was to check if the account is created after sending the data and the user can connect, despite this link to the log in under submit button, everything worked fine except, after pressing the submit button the page showed error, but the account can log in and it worked as should.
-Next i went to login check if connection to account works.
-3. [Log in](http://vegan-recipies-book.herokuapp.com/login): To log in I needed an account made in registration, entering it in the free text fields and clicking submit on this page. In this way, I checked whether the account created earlier works.
-I was also looking at what would happen after clicking the link below "Click here", what should have happened and it redirected me to the registration page.
-4. [My Profile](http://vegan-recipies-book.herokuapp.com/myProfile/ostach20): (To check the rest of content u need to create an account and log in look carefully above )Then, after pressing the log in button, it sent us to "My Profile". Here, after reading the text under 'Hello Username', I clicked on
-the inscription Home and the text describing this part of the application appeared to me, I checked the rest as well and they worked, I had to check the navigation on the icon with the name of the page, it worked.After careful consideration I could go to "Add Recipe".
-5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes): In this part I checked all the free fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it sent data to my mongodb. After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
-6. [Home](http://vegan-recipies-book.herokuapp.com/recipes) (functionality of the Edit, Delate Button): After turning on "Home" again, I can see that the data has been redirected to the fields where it should be, to check it carefully I clicked on the added recipe and the rest of the information appeared. There were also two buttons, the first "Edit" and the second "Delate". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add Recipe".
-after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
-7. Footer : So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
+1. [Home](http://vegan-recipies-book.herokuapp.com/recipes): 
+    While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on       them, I redirected us to registration by clicking the button in navbar.
+    "Register"
+2. [Register](http://vegan-recipies-book.herokuapp.com/register): 
+    Here the most important thing was to check if the account is created after sending the data and the user can connect, despite this link to the log in under         submit button, everything worked fine except, after pressing the submit button the page showed error, but the account can log in and it worked as should.
+    Next i went to login check if connection to account works.
+3. [Log in](http://vegan-recipies-book.herokuapp.com/login): 
+    To log in I needed an account made in registration, entering it in the free text fields and clicking submit on this page. In this way, I checked whether the         account created earlier works.
+    I was also looking at what would happen after clicking the link below "Click here", what should have happened and it redirected me to the registration page.
+4. [My Profile](http://vegan-recipies-book.herokuapp.com/myProfile/ostach20): 
+    (To check the rest of content u need to create an account and log in look carefully above )Then, after pressing the log in button, it sent us to "My Profile".      Here, after reading the text under 'Hello Username', I clicked on
+   the inscription Home and the text describing this part of the application appeared to me, I checked the rest as well and they worked, I had to check the            navigation on the icon with the name of the page, it worked.After careful consideration I could go to "Add Recipe".
+5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes):
+    In this part I checked all the free fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it       sent data to my mongodb. After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
+7. [Home](http://vegan-recipies-book.herokuapp.com/recipes):
+    (functionality of the Edit, Delete Button): After turning on "Home" again, I can see that the data has been redirected to the fields where it should be, to         check it carefully I clicked on the added recipe and the rest of the information appeared. There were also two buttons, the first "Edit" and the second             "Delate". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add         Recipe".
+    after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
+7. Footer : 
+So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
 After that, you could enter an email to the owner of the website.
-8. Navbar : Has been carefully inspected by checking the rest of the pages
+8. Navbar : 
+    Has been carefully inspected by checking the rest of the pages
 
 
 # Deployment:
@@ -217,7 +227,7 @@ your setting should look like :
 - MONGO_URL : url for your cluster
 - PORT : 5000
 - SECRET_KEY : your secret key
-6. Since u did every step from before u can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
+6. Since u did every step from before you can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
 7. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
 
 
