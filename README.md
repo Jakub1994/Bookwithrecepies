@@ -201,7 +201,7 @@ To Deploy the project to a hosting platform (Github) I had to:
 
 ### [Heroku](http://vegan-recipies-book.herokuapp.com/recipes)
  How to deploy on Heroku:
- 1. First create env file where you will put : 
+    1. First create env file where you will put : 
 - Import os
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
@@ -216,19 +216,20 @@ os.environ.setdefault("PORT", "5000")
 os.environ.setdefault("SECRET_KEY", "yourkey")
 os.environ.setdefault("MONGO_URI", "yourcluster")
 os.environ.setdefault("MONGO_DBNAME", "CookingBook")
-2. We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
-2. Create a simple text file named Procfile without the file extension, ie Procfile.txt is not valid
-3. Open procfile and tell heroku how to run the website by writing there python3 app.py
-4. Open heroku Website,From there you have to create new app and open it
-5. Go to settings, There u have to set the Config Vars.Set the:  IP, MONGODB_NAME, MONGO_URL, PORT, SECRET_KEY.
+
+    2. We need a requirments.txt to satisfy heroku you need to create your requirments.txt with pip freeze --local> requirements.txt
+    3. Create a simple text file named Procfile without the file extension, ie Procfile.txt is not valid
+    4. Open procfile and tell heroku how to run the website by writing there python3 app.py
+    5. Open heroku Website,From there you have to create new app and open it
+    6. Go to settings, There u have to set the Config Vars.Set the:  IP, MONGODB_NAME, MONGO_URL, PORT, SECRET_KEY.
 your setting should look like :
 - IP : 0.0.0.0
 - MONGODB_NAME : Name of your collection in Mongodb
 - MONGO_URL : url for your cluster
 - PORT : 5000
 - SECRET_KEY : your secret key
-6. Since u did every step from before you can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
-7. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
+    7. Since u did every step from before you can go to Deploy section in heroku ,scroll down and connect app to the github,click enable automatic deploys.
+    8. At the bottom of the page, click on Deploy Branch, get sure the master branch is selected
 
 
 1. IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
