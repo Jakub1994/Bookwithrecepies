@@ -85,7 +85,7 @@ There is also a light-green footer, where the user can find the creator's contac
 - Footer : located at the very bottom of every page, it is where the owner contact details are: email, phone number and social media.
 - Home : here, is where all the recipes ever posted are.
 - Register : the users without an account can create one here.
-- Log in : This oage enables the registered user to access his account and choose one of the next ones:
+- Log in : This page enables the registered user to access his account and choose one of the next ones:
     
     - My Profile: 
         Once logged in, the user will be redirected here, where there is a description of the of what every page is for, so he/she can make the best of the app.
