@@ -11,7 +11,7 @@ The website would be build by basic Front end Programs (HTML,CSS,Javascript), Py
 
 
 ## Who is Recipe ME intended for?
-My idea was a site where anyone can write and share recipes with other people.
+My idea was to create a cyberspace where anyone can write and share recipes with other people.
 I want it to allow anyone to view all recipes but only registered users to be able to create, edit and delete their own recipes.
 It should also enable the user(s) to use the site as a cooking notebook that could be shared with others giving them the oportunity to try and learn new dishes they would probably never hear of.
 
@@ -167,22 +167,31 @@ A really important part of the project was to create working navbar, the tested 
 
 ## Testing was performed in this order:
 1. [Home](http://vegan-recipies-book.herokuapp.com/recipes): 
-    While we open the website , we are getting to redirect to Home,after checking whether the collapse effect and footer effects and links work, after clicking on       them, I redirected us to registration by clicking the button in navbar.
-    "Register"
+    I first checked whether the "Home" page is the land page when the website is opened. 
+    Next, I clicked on every recipe box to test the collapse effect of the recipes themselves.
+    Finally, I clicked on all the links in the footer and then on the every button in the navigation bar to see is they redirect the user where they should.
+    
 2. [Register](http://vegan-recipies-book.herokuapp.com/register): 
-    Here the most important thing was to check if the account is created after sending the data and the user can connect, despite this link to the log in under         submit button, everything worked fine except, after pressing the submit button the page showed error, but the account can log in and it worked as should.
-    Next i went to login check if connection to account works.
+    The most important part to check in this section was whether the account was created after sending the input details to the database and the user can access         their account. 
+    So I created an account and then I tried to login. The account worked correctly.
+    Therefore, I assumed the "Submit" button was working correctly, too.
+    
 3. [Log in](http://vegan-recipies-book.herokuapp.com/login): 
-    To log in I needed an account made in registration, entering it in the free text fields and clicking submit on this page. In this way, I checked whether the         account created earlier works.
-    I was also looking at what would happen after clicking the link below "Click here", what should have happened and it redirected me to the registration page.
+    In this section, I used the account created in regstration to log in by entering the username and the password in the text fields and checked if the land page       was the "My Profile" page. This way, I rechecked whether the account earlier created works.
+    Then, I clicked on the "Click here" link to see if it redirects the users without an account to the registration and it did, actually.
+    
 4. [My Profile](http://vegan-recipies-book.herokuapp.com/myProfile/ostach20): 
     (To check the rest of content u need to create an account and log in look carefully above )Then, after pressing the log in button, it sent us to "My Profile".      Here, after reading the text under 'Hello Username', I clicked on
    the inscription Home and the text describing this part of the application appeared to me, I checked the rest as well and they worked, I had to check the            navigation on the icon with the name of the page, it worked.After careful consideration I could go to "Add Recipe".
+   
 5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes):
     In this part I checked all the free fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it       sent data to my mongodb. After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
+    
+6. [Log Out] 
 7. [Home](http://vegan-recipies-book.herokuapp.com/recipes):
     (functionality of the Edit, Delete Button): After turning on "Home" again, I can see that the data has been redirected to the fields where it should be, to         check it carefully I clicked on the added recipe and the rest of the information appeared. There were also two buttons, the first "Edit" and the second             "Delate". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add         Recipe".
     after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
+
 7. Footer : 
 So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
 After that, you could enter an email to the owner of the website.
