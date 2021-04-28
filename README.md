@@ -187,23 +187,31 @@ A really important part of the project was to create working navbar, the tested 
     They all did.
    
 5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes):
-    In this part I checked all the text fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it       sent data to my mongodb. 
-    After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
+    I performed various tests in this section:
+    First, I checked if all the text fields respected the minimum and maximum number of characters input by filling them in.
+    Then, I tested the "vegan or not"  by switching it on and off and then making sure the vegan symbol appeared on the recipe or not, accordingly.
+    After that, I checked whether the data from the text fields was sent to my mongodb. 
+    And finally, I checked whether the data from the database was featured in the "Home" section, as it should.
     
 6. [Log Out] 
-    I clciked on the "Log Out" button and it exited the user's account and took me to the "Log In" page.
+    When I clciked on the "Log Out" button, it exited my account and took me to the "Log In" page.
     
 7. [Home](http://vegan-recipies-book.herokuapp.com/recipes):
     Once I logged in and tested all the above, I came back to the Home page to test the functionality of the Edit and the Delete buttons, located after each recipe     posted from the logged-in account. 
     When pressing "Edit", the user should be redirected to a section called "Edit Recipe" that is set exactly as the "Add Recipes" one, allowing the user to modify     any of the inputs: ingredients, steps...
-    There were also two buttons, the first "Edit" and the "Delete". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add         Recipe".
-    after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
+    I edited a recipe and then clicked on the "Edit task" button to see if the modifications were properly saved.
+    Then, I also tested the "Delete" button by clicking on it and the whole recipe was erased.
 
-8. Footer : 
-So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
-After that, you could enter an email to the owner of the website.
+8. Footer :
+    I checked the links in the footer by clicking on them and the email's hover effect .
+    Pressing on the Github, Linkedin and Facebook links took me to my profile in this social networks, as it should.
+    After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
+   Lastly, I sent an email to the owner of the website.
+
 9. Navbar : 
-    Has been carefully inspected by checking the rest of the pages.
+    The navigation bar has been carefully inspected throughout all the above mentioned tests.
+
+In conclusion, all the tests were successful and all functions were working correctly.
 
 
 # Deployment:
@@ -222,7 +230,7 @@ To Deploy the project to a hosting platform (Github) I had to:
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
 - MONGO_URL link to your MONGODB cluster - to do this you have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
-- SECRET_KEY - set it as the most difficult key what u can think about, I used for that page [Randomkeygen](https://randomkeygen.com/)
+- SECRET_KEY - set it as the most difficult key what you can think about, I used for that page [Randomkeygen](https://randomkeygen.com/)
 - PORT set as 5000 or as you want
 your env.py should look like :
 import os
