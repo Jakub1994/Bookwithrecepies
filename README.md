@@ -150,7 +150,7 @@ Everything sent to MONGODB in the "Register" page has been put into empty pools 
 - Whether the vegan on or off lever works.
 - Whether the  "Submit" button stores all inputs in the database and then sends it to the "Home" page as a recipe.
 ### Logout
-Whether it exits the user's account or not.
+- Whether it exits the user's account or not.
 ### Footer
 - Social media links lead to the Github, Linkedin and Facebook profiles of the owner.
 - The hoover effect of the email link: whether it becomes pink when clicked on.
@@ -181,22 +181,29 @@ A really important part of the project was to create working navbar, the tested 
     Then, I clicked on the "Click here" link to see if it redirects the users without an account to the registration and it did, actually.
     
 4. [My Profile](http://vegan-recipies-book.herokuapp.com/myProfile/ostach20): 
-    (To check the rest of content u need to create an account and log in look carefully above )Then, after pressing the log in button, it sent us to "My Profile".      Here, after reading the text under 'Hello Username', I clicked on
-   the inscription Home and the text describing this part of the application appeared to me, I checked the rest as well and they worked, I had to check the            navigation on the icon with the name of the page, it worked.After careful consideration I could go to "Add Recipe".
+    This page should be the land page once the user logs in. This has been tested by logging into my account.
+    Then, I clicked on all the pages' names (Home, My profile, Add Recipes and Log out) and their respective description, i.e. the text stating what they are used       for, appeared and disappeared when clicked on the name again.
+    The last step was clicking on every page's link to make sure they redirect the user where they should and the log out one would exit the user's account.
+    They all did.
    
 5. [Add Recipe](http://vegan-recipies-book.herokuapp.com/new_recipes):
-    In this part I checked all the free fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it       sent data to my mongodb. After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
+    In this part I checked all the text fields by typing a new recipe in them, I also looked at the "vegan" switch on or off. After hitting the "Submit button" it       sent data to my mongodb. 
+    After that, it was left for me to check if the mongodb data is being sent to the "Home" site.
     
 6. [Log Out] 
+    I clciked on the "Log Out" button and it exited the user's account and took me to the "Log In" page.
+    
 7. [Home](http://vegan-recipies-book.herokuapp.com/recipes):
-    (functionality of the Edit, Delete Button): After turning on "Home" again, I can see that the data has been redirected to the fields where it should be, to         check it carefully I clicked on the added recipe and the rest of the information appeared. There were also two buttons, the first "Edit" and the second             "Delate". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add         Recipe".
+    Once I logged in and tested all the above, I came back to the Home page to test the functionality of the Edit and the Delete buttons, located after each recipe     posted from the logged-in account. 
+    When pressing "Edit", the user should be redirected to a section called "Edit Recipe" that is set exactly as the "Add Recipes" one, allowing the user to modify     any of the inputs: ingredients, steps...
+    There were also two buttons, the first "Edit" and the "Delete". After opening "Edit" a similar page to "Add Recipe" appeared to me, only with the recipe entered and the "on" lever moved as I did before on "Add         Recipe".
     after changing it and pressing the done button, the changes were saved. Pressing the "Delate" button removed the entire recipe. So everything was fine.
 
-7. Footer : 
+8. Footer : 
 So I should only check the links and the hover element in the footer. After pressing Github, Linkedin, Facebook, I went to the equivalent link of this name, so it was correct. After pointing the cursor to the email, the color changed to pink, and after clicking, the mailto effect was activated.
 After that, you could enter an email to the owner of the website.
-8. Navbar : 
-    Has been carefully inspected by checking the rest of the pages
+9. Navbar : 
+    Has been carefully inspected by checking the rest of the pages.
 
 
 # Deployment:
@@ -215,7 +222,7 @@ To Deploy the project to a hosting platform (Github) I had to:
 - IP set on 0.0.0.0  or your own
 - MONGODB_NAME Name of your MONGODB collection
 - MONGO_URL link to your MONGODB cluster - to do this you have to open your mongodb > go to Clusters> under your Cluster name click the button connect, then choose Connect your application. Choose the second option which is add your connection string. Copy your string in the field.
-- SECRET_KEY - set it as the most difficult key what u can think about , i used for that page [Randomkeygen](https://randomkeygen.com/)
+- SECRET_KEY - set it as the most difficult key what u can think about, I used for that page [Randomkeygen](https://randomkeygen.com/)
 - PORT set as 5000 or as you want
 your env.py should look like :
 import os
@@ -244,7 +251,7 @@ your setting should look like :
 1. IP and PORT - IP address identify a host/computer on a computer network. Port numbers are logical interfaces used by communication protocols
 2. MONGODB_NAME - Name of yours mongodb collection
 3. MONGO_URL - URL connecting to your MONGODB cluster
-4. SECRET_KEY - Its the security key 
+4. SECRET_KEY - It is the security key 
 
 # Credits
 
