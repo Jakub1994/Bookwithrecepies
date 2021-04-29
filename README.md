@@ -164,7 +164,6 @@ A really important part of the project was to create working navbar, the tested 
     - Add Recipe
     - Logout
 - Recipe ME Logo navigation to the home page
-
 ## Testing was performed in this order:
 1. [Home](http://vegan-recipies-book.herokuapp.com/recipes): 
     I first checked whether the "Home" page is the land page when the website is opened. 
